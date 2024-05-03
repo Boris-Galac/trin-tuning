@@ -1,0 +1,25 @@
+.gallery {
+  isolation: isolate;
+  height: 100vh;
+  background-color: #c3c3c3;
+  overflow-x: hidden;
+}
+.buttons {
+  position: absolute;
+  bottom: 15px;
+  display: flex;
+  gap: 20px;
+  transform: translateX(-50%);
+  left: 50%;
+}
+@media (min-width: 900px) {
+  .gallery {
+    isolation: isolate;
+    height: 60vh;
+    background-color: #c3c3c3;
+    overflow-x: hidden;
+  }
+  .slider {
+    max-width: 70vw;
+  }
+}

@@ -1,0 +1,114 @@
+body {
+  font-family: "Clash Display", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  position: relative;
+  text-wrap: balance;
+  color: var(--white);
+  font-family: "Panchang", sans-serif;
+}
+p {
+  color: var(--white);
+  line-height: 160%;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+.h2-heading {
+  letter-spacing: 1px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.h3-heading {
+  letter-spacing: 2px;
+}
+.features-h2-heading {
+  margin-bottom: 3rem;
+  font-size: clamp(1.5rem, 6vw, 3rem);
+}
+.features-h3-heading {
+  margin-bottom: 0.5rem;
+}
+.features-h2-heading::after {
+  content: "";
+  position: absolute;
+  bottom: -0.5rem;
+  display: block;
+  left: 0;
+  height: 2px;
+  width: 10rem;
+  background-color: hsl(230, 100%, 53%);
+  box-shadow: 0 0 1rem 0.1rem hsl(230, 100%, 53%);
+}
+.headline,
+.subheadline {
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+.headline {
+  font-size: clamp(1.625rem, 7vw, 4rem);
+}
+.subheadline {
+  margin-bottom: 2rem;
+  font-size: clamp(1rem, 4vw, 2rem);
+}
+.features-h3-heading {
+  font-weight: 400;
+}
+.feature-h2-heading--right {
+  text-align: right;
+}
+.feature-h2-heading--right::after {
+  right: 0;
+  content: "";
+  position: absolute;
+  bottom: -0.5rem;
+  display: block;
+  left: unset;
+  height: 2px;
+  width: 10rem;
+  background-color: hsl(230, 100%, 53%);
+  box-shadow: 0 0 1rem 0.1rem hsl(230, 100%, 53%);
+}
+.feature-h2-heading--center {
+  text-align: center;
+}
+.feature-h2-heading--center::after {
+  content: "";
+  display: block;
+  transform: translateX(-50%);
+  left: 50%;
+  height: 2px;
+  width: 10rem;
+  background-color: hsl(230, 100%, 53%);
+  box-shadow: 0 0 1rem 0.1rem hsl(230, 100%, 53%);
+}
+.how-it-works-heading {
+  position: relative;
+  margin-bottom: 3rem;
+  font-size: clamp(1.5rem, 7vw, 3rem);
+}
+.how-it-works-heading::after {
+  content: "";
+  position: absolute;
+  bottom: -0.5rem;
+  display: block;
+  left: 0;
+  height: 2px;
+  width: 10rem;
+  background-color: hsl(230, 100%, 53%);
+  box-shadow: 0 0 1rem 0.1rem hsl(230, 100%, 53%);
+}
+@media (min-width: 700px) {
+  .features-2-heading--first {
+    margin-bottom: 7rem;
+  }
+}

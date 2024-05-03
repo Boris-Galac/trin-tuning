@@ -1,0 +1,60 @@
+.steps {
+  isolation: isolate;
+  padding-block: 6rem;
+}
+.steps::after {
+  content: "";
+  position: absolute;
+  background: url("/src/assets/images/steps-overlay.jpg") no-repeat center
+    center/cover;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.steps__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.step {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.step img {
+  margin-bottom: 1rem;
+}
+.step p {
+  text-align: center;
+  font-size: 1.1rem;
+}
+.step-arrow-desktop {
+  display: none;
+}
+@media (min-width: 960px) {
+  .step:nth-child(odd) {
+    margin-right: auto;
+  }
+  .step:nth-child(even) {
+    margin-left: auto;
+  }
+  .step:nth-child(even) img {
+    order: 2;
+  }
+  .step-arrow-desktop {
+    display: grid;
+  }
+  .step-arrow-mobile {
+    display: none;
+  }
+  .step {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+  }
+}

@@ -1,0 +1,23 @@
+.how-it-works {
+  isolation: isolate;
+  padding-block: 6rem;
+}
+.how-it-works::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("/src/assets/images/how-it-works-overlay.png") no-repeat
+    center center/cover;
+  z-index: -1;
+}
+.how-it-works__wrapper {
+  display: grid;
+  /* place-items: center; */
+}
+.yt-video {
+  margin: auto;
+  width: min(100%, 600px);
+  aspect-ratio: 4/3;
+  border-radius: 10px;
+  box-shadow: 0 0 1.5rem black;
+}

@@ -1,0 +1,24 @@
+.citat {
+  position: relative;
+  height: 50vh;
+  isolation: isolate;
+}
+
+.citat::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("/src/assets/images/prvi-citat.jpg") no-repeat center
+    center/cover;
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+.citat-2 {
+}
+.citat-2::after {
+  background: url("/src/assets/images/citat-2.jpg") no-repeat center
+    center/cover;
+  background-attachment: fixed;
+}

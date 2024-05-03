@@ -1,0 +1,19 @@
+.header {
+  position: fixed;
+  inset: auto 0;
+  z-index: 1;
+  padding: 0.7rem;
+  transition: 0.3s;
+}
+.header[data-active="true"] {
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+.header__logo {
+  width: min(100%, 7rem);
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

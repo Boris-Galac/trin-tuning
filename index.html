@@ -1,0 +1,422 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website</title>
+    <meta name="description" content="Lorem ipsum dolor sit amet." />
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="lorem, ipsum, dolor, sit, amet" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=panchang@400,500,600,700,800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="/src/css/style.css" /> -->
+    <link rel="stylesheet" href="dist/style.css" />
+    <script defer src="/src/js/main.js"></script>
+  </head>
+  <body>
+    <header class="header" data-active="false">
+      <nav class="nav">
+        <a href="index.html" class="header__logo"
+          ><img src="/src/assets/icons/header-logo.svg" alt="header logo"
+        /></a>
+        <button class="switch-clr-theme" data-theme="dark">
+          <img
+            src="/src/assets/icons/dark-theme-icon.svg"
+            alt="light icon"
+            data-id="light"
+            data-active="false"
+            class="clr-theme-icon"
+          />
+          <img
+            src="/src/assets/icons/light-theme-icon.svg"
+            alt="light icon"
+            data-id="dark"
+            data-active="true"
+            class="clr-theme-icon"
+          />
+        </button>
+      </nav>
+    </header>
+    <main class="main">
+      <!-- HERO SECTION -->
+      <section class="hero">
+        <img
+          src="/src/assets/images/hero-overlay-mobile.jpg"
+          aria-hidden="false"
+          class="hero-mobile-overlay"
+        />
+        <img
+          src="/src/assets/images/car-overlay-mobile.png"
+          aria-hidden="false"
+          class="hero-mobile-car"
+        />
+        <img
+          src="/src/assets/images/hero-overlay-desktop.jpg"
+          aria-hidden="false"
+          class="hero-desktop-overlay"
+        />
+        <img
+          src="/src/assets/images/car-overlay-desktop.png"
+          aria-hidden="false"
+          class="hero-desktop-car"
+        />
+        <div class="container">
+          <div class="hero__wrapper">
+            <div class="hero__headline-wrapper">
+              <h1 class="headline"></h1>
+              <p class="subheadline">Live chat between users supported!</p>
+              <a href="#" class="hero__cta" role="button"
+                >try<span>trin</span>application<img
+                  src="/src/assets/icons/arrow-cta-left-icon.svg"
+                  alt="arrow left"
+              /></a>
+            </div>
+          </div>
+          <a href="#" role="button" class="scroll-down-btn"
+            ><img src="/src/assets/icons/hero-arrow-down.svg" alt="arrow down"
+          /></a>
+        </div>
+      </section>
+      <!-- STEPS SECTION -->
+      <section class="steps">
+        <div class="container">
+          <div class="steps__wrapper">
+            <figure class="step hidden-left">
+              <img
+                src="/src/assets/images/steps-security-illustration.svg"
+                alt="security icon"
+              />
+              <p>Register your secure account</p>
+            </figure>
+            <img
+              src="/src/assets/images/steps-arrow-right-illustration.svg"
+              alt="arrow right"
+              class="step-arrow-mobile"
+            />
+            <img
+              src="/src/assets/images/steps-arrow-right-illustration-desktop.svg"
+              alt="arrow right"
+              class="step-arrow-desktop"
+            />
+            <figure class="step hidden-right">
+              <img
+                src="/src/assets/images/steps-upload-illustration.svg"
+                alt="upload icon"
+              />
+              <div class="step-two-row">
+                <p>Upload file you want to adjust (remap)</p>
+                <p>
+                  Optional: Upload archived ori+remap files to accelerate remap
+                  process
+                </p>
+              </div>
+            </figure>
+            <img
+              src="/src/assets/images/steps-arrow-left-illustration.svg"
+              alt="arrow left"
+              class="step-arrow-mobile"
+            />
+            <img
+              src="/src/assets/images/steps-arrow-left-illustration-desktop.svg"
+              alt="arrow left"
+              class="step-arrow-desktop"
+            />
+            <figure class="step hidden-left">
+              <img
+                src="/src/assets/images/steps-inspect-illustration.svg"
+                alt="inspect icon"
+              />
+              <p>Inspect, adjcust and download remapped file</p>
+            </figure>
+            <img
+              src="/src/assets/images/steps-arrow-right-illustration.svg"
+              alt="arrow right"
+              class="step-arrow-mobile"
+            />
+            <img
+              src="/src/assets/images/steps-arrow-right-illustration-desktop.svg"
+              alt="arrow right"
+              class="step-arrow-desktop"
+            />
+            <figure class="step hidden-right">
+              <img
+                src="/src/assets/images/steps-chat-illustration.svg"
+                alt="chat icon"
+              />
+              <p>Use public/private chat for sharing informations</p>
+            </figure>
+          </div>
+        </div>
+      </section>
+      <!-- CITAT SECTION -->
+      <section class="citat"></section>
+      <!-- FEATURES SECTION -->
+      <section class="features">
+        <div class="container">
+          <h2 class="h2-heading features-h2-heading features-2-heading--first">
+            HYBRID TUNING PLATFORM
+          </h2>
+          <div class="features__wrapper">
+            <article class="feature">
+              <div class="feature__header">
+                <h3
+                  class="h3-heading features-h3-heading hidden-left"
+                  style="animation-delay: 0.15s"
+                >
+                  ECU SOFTWARE & COMMUNITY
+                </h3>
+                <p class="hidden-left" style="animation-delay: 0.3s">
+                  Use high performance ECU software to adjust your files.Meet
+                  TRIN Accelerator to speed up your custom remaps.Write in CHAT
+                  to find clients or tuners. Welcome & Enjoy!
+                </p>
+              </div>
+              <div class="feature__body">
+                <img
+                  class="hidden-left"
+                  style="animation-delay: 0.45s"
+                  src="/src/assets/images/feature-img-1.png"
+                  alt="ecu software and community"
+                />
+              </div>
+            </article>
+            <h2
+              class="h2-heading features-h2-heading feature-h2-heading--right"
+            >
+              ADVANCED ECU FILE EDITOR
+            </h2>
+            <article class="feature feature--odd">
+              <div class="feature__header">
+                <h3
+                  class="h3-heading features-h3-heading hidden-right"
+                  style="animation-delay: 0.15s"
+                >
+                  ECU SOFTWARE
+                </h3>
+                <p class="hidden-right" style="animation-delay: 0.3s">
+                  User-friendly editor makes your adjustments easy. Intuitive
+                  and responsive data manipulation together with high-optimized
+                  graphics are something what you can find only with us!
+                </p>
+              </div>
+              <div class="feature__body">
+                <img
+                  class="hidden-right"
+                  style="animation-delay: 0.45s"
+                  src="/src/assets/images/feature-img-2.png"
+                  alt="ecu software and community"
+                />
+              </div>
+            </article>
+            <h2
+              class="h2-heading features-h2-heading feature-h2-heading--center"
+            >
+              TRIN ACCELERATOR
+            </h2>
+            <article class="feature">
+              <div class="feature__header">
+                <h3
+                  class="h3-heading features-h3-heading hidden-left"
+                  style="animation-delay: 0.15s"
+                >
+                  ACCELERATE REMAP PROCESS
+                </h3>
+                <p class="hidden-left" style="animation-delay: 0.3s">
+                  Utilize your archived ori+remap files and upload it as a
+                  reference files. TRIN Accelerator will take care of the rest.
+                  It will looking for all differences between reference files
+                  and transfer them to the target file which you want to remap.
+                </p>
+              </div>
+              <div class="feature__body">
+                <img
+                  class="hidden-left"
+                  style="animation-delay: 0.45s"
+                  src="/src/assets/images/feature-img-3.png"
+                  alt="ecu software and community"
+                />
+              </div>
+            </article>
+            <h2
+              class="h2-heading features-h2-heading feature-h2-heading--right"
+            >
+              ONLINE COMMUNITY
+            </h2>
+            <article class="feature feature--odd">
+              <div class="feature__header">
+                <h3
+                  class="h3-heading features-h3-heading hidden-right"
+                  style="animation-delay: 0.15s"
+                >
+                  LIVE CHAT
+                </h3>
+                <p class="hidden-right" style="animation-delay: 0.3s">
+                  All users have available public and private chats. We are not
+                  limiting, we are supporting communication!
+                </p>
+              </div>
+              <div class="feature__body">
+                <img
+                  class="hidden-right"
+                  style="animation-delay: 0.45s"
+                  src="/src/assets/images/feature-img-4.png"
+                  alt="ecu software and community"
+                />
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- CITAT SECTION -->
+      <section class="citat citat-2"></section>
+      <!-- GALLERY CAROUSEL SECTION -->
+      <section class="gallery">
+        <div class="carousel-wrapper">
+          <div class="slider">
+            <div
+              class="slides"
+              style="--img: url('/src/assets/images/img1.jpg')"
+            ></div>
+            <div
+              class="slides"
+              style="--img: url('/src/assets/images/img2.jpg')"
+            ></div>
+            <div
+              class="slides"
+              style="--img: url('/src/assets/images/img3.jpg')"
+            ></div>
+            <div
+              class="slides"
+              style="--img: url('/src/assets/images/img4.jpg')"
+            ></div>
+            <div
+              class="slides"
+              style="--img: url('/src/assets/images/img5.jpg')"
+            ></div>
+            <div
+              class="slides"
+              style="--img: url('/src/assets/images/img6.jpg')"
+            ></div>
+          </div>
+          <div class="buttons">
+            <span class="prev"></span>
+            <span class="next"></span>
+          </div>
+        </div>
+      </section>
+      <!-- AD SECTION -->
+      <section class="ad">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide-1">
+              <p>Your ad might be here :)</p>
+            </div>
+            <div class="swiper-slide swiper-slide-2">
+              <p>Your ad might be here :)</p>
+            </div>
+            <div class="swiper-slide swiper-slide-3">
+              <p>Your ad might be here :)</p>
+            </div>
+            <div class="swiper-slide swiper-slide-4">
+              <p>Your ad might be here :)</p>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <!-- HOW-IT-WORKS SECTION -->
+      <section class="how-it-works">
+        <div class="container">
+          <h2 class="h2-heading how-it-works-heading">how it works</h2>
+          <div class="how-it-works__wrapper">
+            <iframe
+              class="yt-video hidden-bottom"
+              src="https://www.youtube.com/embed/OjpOR6zcJY8"
+              title="TRIN Tuning Platform - How to use BIN File EDITOR (EDC17C64)"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            <a class="sign-up-btn" href="#" role="button"
+              >Signup to try TRIN now</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- CONTACT SECTION -->
+      <section class="contact">
+        <div class="container">
+          <h2 class="contact-heading">contact us</h2>
+          <div class="contact__wrapper">
+            <div class="contact__card-wrapper">
+              <figure
+                class="contact-card hidden-left"
+                style="animation-delay: 0.2s"
+              >
+                <img
+                  src="/src/assets/images/yt-illustration.svg"
+                  alt="youtube illustration"
+                />
+                <a target="_blank" href="youtube.com/@TrinTuning"
+                  >youtube.com/@TrinTuning</a
+                >
+              </figure>
+              <figure
+                class="contact-card hidden-left"
+                style="animation-delay: 0.4s"
+              >
+                <img
+                  src="/src/assets/images/fb-illustration.svg"
+                  alt="youtube illustration"
+                />
+                <a target="_blank" href="facebook.com/trintuning"
+                  >facebook.com/trintuning</a
+                >
+              </figure>
+              <figure
+                class="contact-card hidden-left"
+                style="animation-delay: 0.6s"
+              >
+                <img
+                  src="/src/assets/images/insta-illustration.svg"
+                  alt="youtube illustration"
+                />
+                <a target="_blank" href="instagram.com/trin.tuning"
+                  >instagram.com/trin.tuning</a
+                >
+              </figure>
+            </div>
+          </div>
+          <a class="contact__mail-me" href="mailto:info@trintuning.com"
+            >info@trintuning.com</a
+          >
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <a href="index.html"
+        ><img src="/src/assets/images/footer-logo.png" alt="footer logo"
+      /></a>
+      <div class="footer-line"></div>
+      <div class="copyright">
+        <p>Copyright 2024, All rights reserved.</p>
+        <a href="#">Terms and Conditions</a>
+      </div>
+    </footer>
+    <button class="back-to-top-btn" data-visible="false">
+      <img src="/src/assets/icons/arrow-top-icon.svg" alt="arrow up" />
+    </button>
+  </body>
+</html>

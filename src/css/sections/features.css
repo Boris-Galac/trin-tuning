@@ -1,0 +1,123 @@
+.features {
+  position: relative;
+  padding-block: 6rem;
+  isolation: isolate;
+  overflow-x: hidden;
+}
+.features::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 200%;
+  height: 100%;
+  background: url("/src/assets/images/features-overlay.png") no-repeat center
+    center/cover;
+  z-index: -2;
+}
+.feature {
+  position: relative;
+  margin-bottom: 12rem;
+  max-width: 600px;
+}
+.features__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-block: 2rem;
+}
+.feature::before,
+.feature::after {
+  content: "";
+  position: absolute;
+  background-color: hsl(262, 100%, 53%);
+  box-shadow: 0 0 0.4rem hsl(230, 100%, 53%);
+}
+.feature::before {
+  height: 5rem;
+  width: 2px;
+  bottom: 0;
+  bottom: -115px;
+}
+.feature::after {
+  width: 70%;
+  height: 2px;
+  bottom: -115px;
+}
+.feature__body img {
+  position: absolute;
+  right: -20px;
+  bottom: -130px;
+  z-index: -1;
+}
+/* feature odd  */
+.feature--odd h3,
+.feature--odd p {
+  text-align: right;
+}
+.feature--odd img {
+  position: absolute;
+  bottom: -130px;
+  left: -40px;
+  z-index: -1;
+}
+.feature--odd::before {
+  right: 0;
+}
+.feature--odd::after {
+  right: 0;
+}
+@media (min-width: 960px) {
+  .features__wrapper {
+    align-items: unset;
+    gap: 5rem;
+  }
+  .feature {
+    position: relative;
+    margin-bottom: 12rem;
+    max-width: 600px;
+  }
+  .feature::before {
+    height: 219px;
+    width: 2px;
+    bottom: 0;
+    bottom: -115px;
+  }
+  .feature::after {
+    width: 70%;
+    height: 2px;
+    bottom: -115px;
+  }
+  .feature__body img {
+    position: absolute;
+    right: -310px;
+    bottom: -220px;
+    z-index: -1;
+  }
+  .feature__header {
+    margin-left: 2rem;
+  }
+  .feature--odd {
+    margin-left: auto;
+  }
+  .feature--odd .feature__header {
+    margin-right: 2rem;
+  }
+  .feature:nth-of-type(3) .feature__header {
+    transform: translateY(28px);
+  }
+  .feature--odd .feature__body img {
+    right: 0;
+    left: -240px;
+  }
+  .features::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: url("/src/assets/images/features-overlay.png") no-repeat center
+      center/cover;
+    z-index: -2;
+  }
+}

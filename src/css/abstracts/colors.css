@@ -1,0 +1,18 @@
+:root {
+  --black: hsl(0, 0%, 0%);
+  --white: hsl(0, 0%, 100%);
+  --background-clr: hsl(218, 25%, 19%);
+}
+/* swtich theme css*/
+body.light-theme {
+  /* --white: gray; */
+}
+.clr-theme-icon {
+  pointer-events: none;
+}
+.clr-theme-icon[data-active="false"] {
+  display: none;
+}
+.clr-theme-icon[data-active="true"] {
+  display: grid;
+}

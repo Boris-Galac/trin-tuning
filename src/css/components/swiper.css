@@ -1,0 +1,36 @@
+.ad {
+  background-color: gray;
+  height: 70vh;
+}
+.swiper {
+  /* width: 300px;
+  height: 50vh; */
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  background-color: aquamarine;
+  /* left: 50%;
+  top: 50%;
+  margin-left: -150px;
+  margin-top: -150px; */
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+}
+.swiper-slide-1 {
+  background-color: hsl(240, 78%, 73%);
+}
+.swiper-slide-2 {
+  background-color: hsl(131, 55%, 65%);
+}
+.swiper-slide-3 {
+  background-color: hsl(58, 41%, 56%);
+}
+.swiper-slide-4 {
+  background-color: hsl(341, 41%, 56%);
+}
