@@ -141,7 +141,7 @@ bottom.forEach((el) => observer.observe(el));
 ////// TYPING EFFECT
 
 let txt = `ADVANCED ECU FILE EDITOR & REMAP ACCELERATOR`;
-let speed = 50; // Speed of typing in milliseconds
+let speed = 80; // Speed of typing in milliseconds
 let i = 0;
 
 function typeWriter() {

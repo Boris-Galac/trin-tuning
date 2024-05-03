@@ -47,3 +47,14 @@
     opacity: 1;
   }
 }
+.car-show {
+  animation: car-show 4s forwards;
+}
+@keyframes car-show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
