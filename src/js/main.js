@@ -17,9 +17,11 @@ carouselPrevBtn.addEventListener("click", (e) => {
 var swiper = new Swiper(".mySwiper", {
   effect: "cube",
   grabCursor: true,
-  autoplay: true,
+  autoplay: {
+    delay: 1000,
+  },
   loop: true,
-  speed: 1500,
+  speed: 1000,
   cubeEffect: {
     shadow: true,
     slideShadows: true,
@@ -78,7 +80,8 @@ const selectElement = (selector) => {
   );
 };
 
-// Switch theme/add to local storage
+//// Switch theme/add to local storage
+
 const bodyElement = document.body;
 const themeToggleBtn = selectElement(".switch-clr-theme");
 const currentTheme = localStorage.getItem("currentTheme");

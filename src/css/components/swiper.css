@@ -1,8 +1,15 @@
 .ad {
   background-color: gray;
   height: 70vh;
-  overflow-x: hidden;
+  overflow: hidden;
 }
+.ad-logo {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  z-index: 5;
+}
+
 .swiper {
   position: absolute;
   inset: 0;

@@ -28,7 +28,9 @@
   height: 100%;
   transform: translateY(0);
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0);
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #111;
 }
 .slider .slides:nth-child(3) {
   left: calc(50% + 240px);

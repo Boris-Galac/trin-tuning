@@ -107,6 +107,9 @@ a {
   background-color: hsl(230, 100%, 53%);
   box-shadow: 0 0 1rem 0.1rem hsl(230, 100%, 53%);
 }
+.features-2-heading--first {
+  margin-bottom: 1.5rem;
+}
 @media (min-width: 700px) {
   .features-2-heading--first {
     margin-bottom: 7rem;

@@ -1,6 +1,7 @@
 .steps {
   isolation: isolate;
   padding-block: 6rem;
+  overflow-x: hidden;
 }
 .steps::after {
   content: "";
