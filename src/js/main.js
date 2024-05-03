@@ -52,6 +52,17 @@ window.addEventListener("scroll", (e) => {
   } else {
     document.querySelector("header").setAttribute("data-active", "false");
   }
+
+  /// progress indicator line
+
+  let winScroll = window.scrollY; /// 0 - 1519
+  let height = document.body.scrollHeight - innerHeight; /// 2806 - 1287
+
+  let scrolled = Math.ceil((winScroll / height) * 100);
+  let indicatorLine = document.querySelector(".indicator-scroll-line");
+  indicatorLine.style = `
+      width: ${scrolled}%;
+    `;
 });
 
 //// BACK TO TOP
@@ -88,12 +99,16 @@ const currentTheme = localStorage.getItem("currentTheme");
 if (currentTheme) {
   bodyElement.classList.add("light-theme");
 }
-
 themeToggleBtn.addEventListener("click", (e) => {
+  if (localStorage.getItem("currentTheme") === "themeActive") {
+    // document
+    //   .querySelector(".hero-desktop-dark")
+    //   .setAttribute("data-active", "false");
+    console.log("tama");
+  } else {
+    console.log("svijetlo");
+  }
   bodyElement.classList.toggle("light-theme");
-  document
-    .querySelector(".hero-desktop-dark")
-    .setAttribute("data-active", "false");
   document
     .querySelectorAll(".clr-theme-icon")
     .forEach((clrIcon) => clrIcon.setAttribute("data-active", "false"));

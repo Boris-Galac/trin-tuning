@@ -5,7 +5,7 @@
 }
 /* swtich theme css*/
 body.light-theme {
-  /* --white: gray; */
+  --white: gray;
 }
 .clr-theme-icon {
   pointer-events: none;
