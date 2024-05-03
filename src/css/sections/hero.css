@@ -19,13 +19,22 @@
   right: 0;
   height: 50vh;
 }
-.hero-desktop-overlay,
 .hero-desktop-car {
   display: none;
 }
-.hero-desktop-overlay {
+.hero-desktop-dark,
+.hero-desktop-light {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
 }
-.hero-desktop-car {
+.hero-desktop-dark[data-active="true"] {
+  display: grid;
+}
+.hero-desktop-dark[data-active="false"] {
+  display: none;
 }
 .hero__wrapper {
   height: 100%;
@@ -35,7 +44,6 @@
   transform: translateY(-10vh);
 }
 @media (min-width: 960px) {
-  .hero-mobile-overlay,
   .hero-mobile-car {
     display: none;
   }

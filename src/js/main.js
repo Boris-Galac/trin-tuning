@@ -92,6 +92,9 @@ if (currentTheme) {
 themeToggleBtn.addEventListener("click", (e) => {
   bodyElement.classList.toggle("light-theme");
   document
+    .querySelector(".hero-desktop-dark")
+    .setAttribute("data-active", "false");
+  document
     .querySelectorAll(".clr-theme-icon")
     .forEach((clrIcon) => clrIcon.setAttribute("data-active", "false"));
 
@@ -140,18 +143,3 @@ right.forEach((el) => observer.observe(el));
 // bottom
 const bottom = document.querySelectorAll(".hidden-bottom");
 bottom.forEach((el) => observer.observe(el));
-
-////// TYPING EFFECT
-
-let txt = `ADVANCED ECU FILE EDITOR & REMAP ACCELERATOR`;
-let speed = 80; // Speed of typing in milliseconds
-let i = 0;
-
-function typeWriter() {
-  if (i < txt.length) {
-    document.querySelector(".headline").innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
-  }
-}
-typeWriter();
