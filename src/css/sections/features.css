@@ -132,3 +132,11 @@
     left: -380px !important;
   }
 }
+@media (min-width: 1024px) {
+  .feature__body img {
+    scale: 1.3;
+  }
+  .feature-last-heading {
+    margin-bottom: 5rem;
+  }
+}

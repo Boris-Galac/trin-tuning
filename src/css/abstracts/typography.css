@@ -124,7 +124,7 @@ a {
 }
 @media (min-width: 1153px) {
   .features-2-heading--first {
-    margin-bottom: 7rem;
+    margin-bottom: 5rem;
   }
   .advanced-ecu-file-editor--heading {
     width: max-content;
