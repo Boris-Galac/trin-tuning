@@ -116,8 +116,17 @@ a {
 .features-2-heading--first {
   margin-bottom: 1.5rem;
 }
+
 @media (min-width: 700px) {
   .features-2-heading--first {
     margin-bottom: 7rem;
+  }
+}
+@media (min-width: 1153px) {
+  .features-2-heading--first {
+    margin-bottom: 7rem;
+  }
+  .advanced-ecu-file-editor--heading {
+    width: max-content;
   }
 }
