@@ -99,15 +99,8 @@ const currentTheme = localStorage.getItem("currentTheme");
 if (currentTheme) {
   bodyElement.classList.add("light-theme");
 }
+
 themeToggleBtn.addEventListener("click", (e) => {
-  if (localStorage.getItem("currentTheme") === "themeActive") {
-    // document
-    //   .querySelector(".hero-desktop-dark")
-    //   .setAttribute("data-active", "false");
-    console.log("tama");
-  } else {
-    console.log("svijetlo");
-  }
   bodyElement.classList.toggle("light-theme");
   document
     .querySelectorAll(".clr-theme-icon")

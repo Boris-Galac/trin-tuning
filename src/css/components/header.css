@@ -4,6 +4,7 @@
   z-index: 1;
   padding: 0.7rem;
   transition: 0.3s;
+  z-index: 100;
 }
 .header[data-active="true"] {
   background-color: rgba(0, 0, 0, 0.1);

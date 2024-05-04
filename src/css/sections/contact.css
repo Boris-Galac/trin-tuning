@@ -7,6 +7,7 @@
   font-weight: 400;
   font-size: clamp(2rem, 7vw, 3rem);
   margin-bottom: 3rem;
+  color: var(--font-clr);
 }
 .contact .container {
   display: grid;
@@ -73,7 +74,7 @@
   transform: rotatey(360deg);
 }
 .contact__mail-me {
-  color: var(--white);
+  color: var(--font-clr);
   text-transform: uppercase;
   font-size: 1.5rem;
   text-align: center;

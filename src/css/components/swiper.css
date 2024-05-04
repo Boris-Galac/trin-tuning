@@ -1,5 +1,4 @@
 .ad {
-  background-color: gray;
   height: 70vh;
   overflow: hidden;
 }
@@ -15,7 +14,7 @@
   inset: 0;
   height: 100%;
   width: 100%;
-  background-color: aquamarine;
+  background-color: transparent;
 }
 
 .swiper-slide {
@@ -25,14 +24,11 @@
   place-items: center;
 }
 .swiper-slide-1 {
-  background-color: hsl(240, 78%, 73%);
+  background-color: hsl(0, 0%, 0%);
 }
 .swiper-slide-2 {
-  background-color: hsl(131, 55%, 65%);
+  background-color: hsl(0, 0%, 100%);
 }
-.swiper-slide-3 {
-  background-color: hsl(58, 41%, 56%);
-}
-.swiper-slide-4 {
-  background-color: hsl(341, 41%, 56%);
+.swiper-slide-2 p {
+  color: var(--black);
 }
