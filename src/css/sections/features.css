@@ -70,6 +70,7 @@
 .feature span {
   display: contents;
 }
+
 @media (min-width: 960px) {
   .feature span {
     display: block;
@@ -125,5 +126,9 @@
     background: url("/src/assets/images/features-overlay.png") no-repeat center
       center/cover;
     z-index: -2;
+  }
+  .feature-last-img-size {
+    max-width: 602px;
+    left: -380px !important;
   }
 }
