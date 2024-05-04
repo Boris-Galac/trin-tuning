@@ -4,17 +4,3 @@
   --font-clr: hsl(0, 0%, 100%);
   --background-clr: hsl(218, 25%, 19%);
 }
-/* swtich theme css*/
-body.light-theme {
-  --font-clr: hsl(210, 13%, 18%);
-  --background-clr: hsl(0, 0%, 100%);
-}
-.clr-theme-icon {
-  pointer-events: none;
-}
-.clr-theme-icon[data-active="false"] {
-  display: none;
-}
-.clr-theme-icon[data-active="true"] {
-  display: grid;
-}

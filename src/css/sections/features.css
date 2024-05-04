@@ -67,7 +67,13 @@
 .feature--odd::after {
   right: 0;
 }
+.feature span {
+  display: contents;
+}
 @media (min-width: 960px) {
+  .feature span {
+    display: block;
+  }
   .features__wrapper {
     align-items: unset;
     gap: 5rem;

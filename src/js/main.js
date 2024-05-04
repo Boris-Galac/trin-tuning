@@ -1,17 +1,3 @@
-const carouselNextBtn = document.querySelector(".next");
-const carouselPrevBtn = document.querySelector(".prev");
-const slider = document.querySelector(".slider");
-
-carouselNextBtn.addEventListener("click", (e) => {
-  const slides = document.querySelectorAll(".slides");
-  slider.appendChild(slides[0]);
-});
-
-carouselPrevBtn.addEventListener("click", (e) => {
-  const slides = document.querySelectorAll(".slides");
-  slider.prepend(slides[slides.length - 1]);
-});
-
 // swiper
 
 var swiper = new Swiper(".mySwiper", {
@@ -32,6 +18,32 @@ var swiper = new Swiper(".mySwiper", {
     el: ".swiper-pagination",
   },
 });
+var swiper = new Swiper(".carousel", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    },
+    1024: {
+      slidesPerView: 5,
+      spaceBetween: 50,
+    },
+  },
+});
+
+// baguettebox
+
+baguetteBox.run(".gallery");
 
 /////////// HIDE HEADER ON SCROLL
 
@@ -78,51 +90,6 @@ window.addEventListener("scroll", (e) => {
   if (window.scrollY > 150) {
     backToTopbtn.setAttribute("data-visible", "true");
   } else backToTopbtn.setAttribute("data-visible", "false");
-});
-
-////////// SWITCH CHANGE LIGHT/DARK THEME
-
-// Grab elements
-const selectElement = (selector) => {
-  const element = document.querySelector(selector);
-  if (element) return element;
-  throw new Error(
-    `Something went wrong! Make sure that ${selector} exists/is typed correctly.`
-  );
-};
-
-//// Switch theme/add to local storage
-
-const bodyElement = document.body;
-const themeToggleBtn = selectElement(".switch-clr-theme");
-const currentTheme = localStorage.getItem("currentTheme");
-if (currentTheme) {
-  bodyElement.classList.add("light-theme");
-}
-
-themeToggleBtn.addEventListener("click", (e) => {
-  bodyElement.classList.toggle("light-theme");
-  document
-    .querySelectorAll(".clr-theme-icon")
-    .forEach((clrIcon) => clrIcon.setAttribute("data-active", "false"));
-
-  if (bodyElement.classList.contains("light-theme")) {
-    document
-      .querySelector('.clr-theme-icon[data-id="light"]')
-      .setAttribute("data-active", "true");
-    document
-      .querySelector('.clr-theme-icon[data-id="dark"]')
-      .setAttribute("data-active", "false");
-    localStorage.setItem("currentTheme", "themeActive");
-  } else {
-    document
-      .querySelector('.clr-theme-icon[data-id="light"]')
-      .setAttribute("data-active", "false");
-    document
-      .querySelector('.clr-theme-icon[data-id="dark"]')
-      .setAttribute("data-active", "true");
-    localStorage.removeItem("currentTheme");
-  }
 });
 
 ///////// INTERSECTION OBSERVER

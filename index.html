@@ -6,6 +6,10 @@
     <meta name="description" content="Lorem ipsum dolor sit amet." />
     <meta name="robots" content="index, follow" />
     <meta name="keywords" content="lorem, ipsum, dolor, sit, amet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link
       rel="stylesheet"
@@ -19,8 +23,8 @@
       href="https://api.fontshare.com/v2/css?f[]=panchang@400,500,600,700,800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/src/css/style.css" />
-    <!-- <link rel="stylesheet" href="dist/style.css" /> -->
+    <!-- <link rel="stylesheet" href="/src/css/style.css" /> -->
+    <link rel="stylesheet" href="dist/style.css" />
     <script defer src="/src/js/main.js"></script>
   </head>
   <body>
@@ -29,22 +33,6 @@
         <a href="index.html" class="header__logo"
           ><img src="/src/assets/icons/header-logo.svg" alt="header logo"
         /></a>
-        <button class="switch-clr-theme" data-theme="dark">
-          <img
-            src="/src/assets/icons/dark-theme-icon.svg"
-            alt="light icon"
-            data-id="light"
-            data-active="false"
-            class="clr-theme-icon"
-          />
-          <img
-            src="/src/assets/icons/light-theme-icon.svg"
-            alt="light icon"
-            data-id="dark"
-            data-active="true"
-            class="clr-theme-icon"
-          />
-        </button>
       </nav>
     </header>
     <main class="main">
@@ -181,9 +169,15 @@
                   ECU SOFTWARE & COMMUNITY
                 </h3>
                 <p class="hidden-left" style="animation-delay: 0.3s">
-                  Use high performance ECU software to adjust your files.Meet
-                  TRIN Accelerator to speed up your custom remaps.Write in CHAT
-                  to find clients or tuners. Welcome & Enjoy!
+                  <span
+                    >Use high performance ECU software to adjust your
+                    files.</span
+                  >
+                  <span
+                    >Meet TRIN Accelerator to speed up your custom remaps.</span
+                  >
+                  <span>Write in CHAT to find clients or tuners.</span> <br />
+                  <span>Welcome & Enjoy!</span>
                 </p>
               </div>
               <div class="feature__body">
@@ -209,9 +203,14 @@
                   ECU SOFTWARE
                 </h3>
                 <p class="hidden-right" style="animation-delay: 0.3s">
-                  User-friendly editor makes your adjustments easy. Intuitive
-                  and responsive data manipulation together with high-optimized
-                  graphics are something what you can find only with us!
+                  <span>User-friendly editor makes your adjustments easy.</span>
+                  <span
+                    >Intuitive and responsive data manipulation together with
+                  </span>
+                  <span
+                    >high-optimized graphics are something what you can find
+                    only with us!</span
+                  >
                 </p>
               </div>
               <div class="feature__body">
@@ -237,10 +236,19 @@
                   ACCELERATE REMAP PROCESS
                 </h3>
                 <p class="hidden-left" style="animation-delay: 0.3s">
-                  Utilize your archived ori+remap files and upload it as a
-                  reference files. TRIN Accelerator will take care of the rest.
-                  It will looking for all differences between reference files
-                  and transfer them to the target file which you want to remap.
+                  <span
+                    >Utilize your archived ori+remap files and upload it as a
+                    reference files.</span
+                  >
+                  <span>TRIN Accelerator will take care of the rest.</span>
+                  <span
+                    >It will looking for all differences between reference
+                    files</span
+                  >
+                  <span
+                    >and transfer them to the target file which you want to
+                    remap.</span
+                  >
                 </p>
               </div>
               <div class="feature__body">
@@ -266,8 +274,12 @@
                   LIVE CHAT
                 </h3>
                 <p class="hidden-right" style="animation-delay: 0.3s">
-                  All users have available public and private chats. We are not
-                  limiting, we are supporting communication!
+                  <span
+                    >All users have available public and private chats.</span
+                  >
+                  <span
+                    >We are not limiting, we are supporting communication!</span
+                  >
                 </p>
               </div>
               <div class="feature__body">
@@ -286,37 +298,54 @@
       <section class="citat citat-2"></section>
       <!-- GALLERY CAROUSEL SECTION -->
       <section class="gallery">
-        <div class="carousel-wrapper">
-          <div class="slider">
-            <div
-              class="slides"
-              style="--img: url('/src/assets/images/img1.jpg')"
-            ></div>
-            <div
-              class="slides"
-              style="--img: url('/src/assets/images/img2.jpg')"
-            ></div>
-            <div
-              class="slides"
-              style="--img: url('/src/assets/images/img3.jpg')"
-            ></div>
-            <div
-              class="slides"
-              style="--img: url('/src/assets/images/img4.jpg')"
-            ></div>
-            <div
-              class="slides"
-              style="--img: url('/src/assets/images/img5.jpg')"
-            ></div>
-            <div
-              class="slides"
-              style="--img: url('/src/assets/images/img6.jpg')"
-            ></div>
+        <h2 class="h2-heading how-it-works-heading">gallery</h2>
+        <!-- Swiper -->
+        <div class="carousel">
+          <div class="swiper-wrapper">
+            <a
+              class="swiper-slide"
+              href="/src/assets/images/img1.jpg"
+              data-caption="'Ladno"
+            >
+              <img src="/src/assets/images/img1.jpg" alt="'Ladno" />
+            </a>
+            <a
+              class="swiper-slide"
+              href="/src/assets/images/img2.jpg"
+              data-caption="'Ladno"
+            >
+              <img src="/src/assets/images/img2.jpg" alt="'Ladno" />
+            </a>
+            <a
+              class="swiper-slide"
+              href="/src/assets/images/img3.jpg"
+              data-caption="'Ladno"
+            >
+              <img src="/src/assets/images/img3.jpg" alt="'Ladno" />
+            </a>
+            <a
+              class="swiper-slide"
+              href="/src/assets/images/img4.jpg"
+              data-caption="'Ladno"
+            >
+              <img src="/src/assets/images/img4.jpg" alt="'Ladno" />
+            </a>
+            <a
+              class="swiper-slide"
+              href="/src/assets/images/img5.jpg"
+              data-caption="'Ladno"
+            >
+              <img src="/src/assets/images/img5.jpg" alt="'Ladno" />
+            </a>
+            <a
+              class="swiper-slide"
+              href="/src/assets/images/img6.jpg"
+              data-caption="'Ladno"
+            >
+              <img src="/src/assets/images/img6.jpg" alt="'Ladno" />
+            </a>
           </div>
-          <div class="buttons">
-            <span class="prev"></span>
-            <span class="next"></span>
-          </div>
+          <div class="swiper-pagination"></div>
         </div>
       </section>
       <!-- AD SECTION -->
@@ -330,7 +359,7 @@
                   aria-hidden="true"
                 />
               </div>
-              <p>Your ad might be here :)</p>
+              <p>Your ad might be here.</p>
             </div>
             <div class="swiper-slide swiper-slide-2">
               <div class="ad-logo">
@@ -339,7 +368,7 @@
                   aria-hidden="true"
                 />
               </div>
-              <p>Your ad might be here :)</p>
+              <p>Your ad might be here.</p>
             </div>
           </div>
           <div class="swiper-pagination"></div>
@@ -350,7 +379,7 @@
         <div class="container">
           <h2 class="h2-heading how-it-works-heading">how it works</h2>
           <div class="how-it-works__wrapper">
-            <iframe
+            <!-- <iframe
               class="yt-video hidden-bottom"
               src="https://www.youtube.com/embed/OjpOR6zcJY8"
               title="TRIN Tuning Platform - How to use BIN File EDITOR (EDC17C64)"
@@ -358,7 +387,7 @@
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerpolicy="strict-origin-when-cross-origin"
               allowfullscreen
-            ></iframe>
+            ></iframe> -->
             <a class="sign-up-btn" href="#" role="button"
               >Signup to try TRIN now</a
             >

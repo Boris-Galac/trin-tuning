@@ -8,7 +8,9 @@
   left: 2rem;
   z-index: 5;
 }
-
+.ad p {
+  font-size: clamp(1.1rem, 7vw, 2rem);
+}
 .swiper {
   position: absolute;
   inset: 0;
