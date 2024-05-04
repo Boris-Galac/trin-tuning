@@ -80,6 +80,9 @@
   text-align: center;
   margin-block: 4rem;
   transition: 0.8s;
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
 }
 .contact__mail-me:hover {
   filter: drop-shadow(0 0 0.5rem var(--white));

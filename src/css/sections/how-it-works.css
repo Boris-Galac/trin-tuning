@@ -1,6 +1,7 @@
 .how-it-works {
   isolation: isolate;
   padding-block: 6rem;
+  padding-bottom: 11rem;
 }
 .how-it-works::before {
   content: "";
